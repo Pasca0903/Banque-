@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banque en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Bienvenue sur Banque en Ligne</h1>
+</header>
+<nav>
+    <a href="#compte">Mon Compte</a>
+    <a href="#virement">Faire un Virement</a>
+    <a href="#transactions">Historique des Transactions</a>
+    <a href="#cartes">Mes Cartes</a>
+    <a href="#contact">Nous Contacter</a>
+</nav>
+<div class="container" id="compte">
+    <h2>Mon Compte</h2>
+    <p>Connectez-vous pour consulter vos soldes et gérer votre compte.</p>
+</div>
+<div class="container" id="virement">
+    <h2>Faire un Virement</h2>
+    <form class="virement-form">
+        <input type="text" placeholder="Nom du bénéficiaire" required>
+        <input type="number" placeholder="Numéro de compte" required>
+        <input type="number" placeholder="Montant en euros" required>
+        <button type="submit">Envoyer le virement</button>
+    </form>
+</div>
+<div class="container" id="transactions">
+    <h2>Historique des Transactions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Montant</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01/10/2024</td>
+                <td>Virement à Jean Dupont</td>
+                <td>-200 €</td>
+                <td>Réussi</td>
+            </tr>
+            <tr>
+                <td>30/09/2024</td>
+                <td>Crédit salaire</td>
+                <td>+2500 €</td>
+                <td>Réussi</td>
+            </tr>
+            <tr>
+                <td>28/09/2024</td>
+                <td>Achat en ligne</td>
+                <td>-50 €</td>
+                <td>Réussi</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container" id="cartes">
+    <h2>Gérer Mes Cartes</h2>
+    <p>Activez, désactivez ou gérez vos cartes bancaires en toute simplicité.</p>
+</div>
+<div class="container" id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute question, n’hésitez pas à nous contacter via notre chat ou email.</p>
+</div>
+<footer>
+    <p>&copy; 2024 Banque en Ligne. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
